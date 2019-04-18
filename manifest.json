@@ -1,0 +1,33 @@
+{
+    "version": "1",
+    "information": {
+        "name": "poweroutageus_widget_plugin",
+        "displayName": "PowerOutage.us Map Widget",
+        "description": "Imbeds PowerOutage.us's Map Widget into Ubiquiti UCRM",
+        "url": "https://github.com/Ubiquiti-App/UCRM-plugins",
+        "version": "0.1.0",
+        "ucrmVersionCompliancy": {
+            "min": "2.14.0",
+            "max": null
+        },
+        "author": "Bluefire Studios LLC"
+    },
+	"configuration": [
+        {
+            "key": "POUS_Widget_Key",
+            "label": "PowerOutage.us Widget Key",
+            "description": "This is the key for accessing the PowerOutage.us Map Widget Serivce. See https://poweroutage.us/products for more information.",
+            "required": 1
+        }
+		],
+	"menu": [
+        {
+            "key": "Power_Outage_Map",
+            "label": "Power Outage Map",
+            "type": "admin",
+            "target": "iframe",
+            "parameters": {
+            }
+        }
+    ]
+}
